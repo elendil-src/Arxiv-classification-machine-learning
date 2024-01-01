@@ -1,0 +1,8 @@
+*.pkl
+*.pickle
+DONT-COMMIT
+/__pycache__
+/arxiv-dataset/archive.zip
+/arxiv-dataset/arxiv_data.csv
+
+
