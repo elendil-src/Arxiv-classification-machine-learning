@@ -1,0 +1,170 @@
+POST http://localhost:5000/api/classification HTTP/1.1
+content-type: application/json
+
+{
+    "summaries":  "Deep learning networks are typically trained by Stochastic Gradient Descent  (SGD) methods that iteratively improve the model parameters by estimating a gradient on a very small fraction of the training data. A major roadblock faced when increasing the batch size to a substantial fraction of the training data for improving training time is the persistent degradation in performance (generalization gap). To address this issue, recent work propose to add small perturbations to the model parameters when computing the stochastic gradients and report improved generalization performance due to smoothing effects. However, this approach is poorly understood; it requires often model-specific noise and fine-tuning. To alleviate these drawbacks, we propose to use instead computationally efficient extrapolation (extragradient) to stabilize the optimization trajectory while still benefiting from smoothing to avoid sharp minima. This principled approach is well grounded from an optimization perspective and we show that a host of variations can be covered in a unified framework that we propose. We prove the convergence of this novel scheme and rigorously evaluate its empirical performance on ResNet, LSTM, and Transformer. We demonstrate that in a variety of experiments the scheme allows scaling to much larger batch sizes than before whilst reaching or surpassing SOTA accuracy."
+}
+
+###
+# Item at loc 0
+# Item index id= 13697
+# titles       Extrapolation for Large-batch Training in Deep...
+# summaries    Deep learning networks are typically trained b...
+# "Deep learning networks are typically trained by Stochastic Gradient Descent 
+# (SGD) methods that iteratively improve the model parameters by estimating a
+# gradient on a very small fraction of the training data. A major roadblock faced
+# when increasing the batch size to a substantial fraction of the training data
+# for improving training time is the persistent degradation in performance
+# (generalization gap). To address this issue, recent work propose to add small
+# perturbations to the model parameters when computing the stochastic gradients
+# and report improved generalization performance due to smoothing effects.
+# However, this approach is poorly understood; it requires often model-specific
+# noise and fine-tuning. To alleviate these drawbacks, we propose to use instead
+# computationally efficient extrapolation (extragradient) to stabilize the
+# optimization trajectory while still benefiting from smoothing to avoid sharp
+# minima. This principled approach is well grounded from an optimization
+# perspective and we show that a host of variations can be covered in a unified
+# framework that we propose. We prove the convergence of this novel scheme and
+# rigorously evaluate its empirical performance on ResNet, LSTM, and Transformer.
+# We demonstrate that in a variety of experiments the scheme allows scaling to
+# much larger batch sizes than before whilst reaching or surpassing SOTA
+# accuracy.
+# terms                                     ['cs.LG', 'stat.ML']
+# Name: 13697, dtype: object
+# deep learn network typic train stochast gradient descent sgd method iter improv model paramet estim gradient small fraction train data major roadblock face increas batch size substanti fraction train data improv train time persist degrad perform general gap address issu recent work propos add small perturb model paramet comput stochast gradient report improv general perform due smooth effect howev approach poor understood requir often modelspecif nois finetun allevi drawback propos use instead comput effici extrapol extragradi stabil optim trajectori still benefit smooth avoid sharp minima principl approach well ground optim perspect show host variat cover unifi framework propos prove converg novel scheme rigor evalu empir perform resnet lstm transform demonstr varieti experi scheme allow scale much larger batch size whilst reach surpass sota accuraci
+#   (0, 3665014)	0.036200375783918146
+#   (0, 3658935)	0.01991222162051902
+#   (0, 3641677)	0.058044020437315866
+#   (0, 3632924)	0.0837432650586432
+#   (0, 3630706)	0.025714055681774317
+#   (0, 3562022)	0.07758026581706491
+#   (0, 3561430)	0.03594989926428477
+#   (0, 3558534)	0.03312216547637527
+#   (0, 3516543)	0.08091178834142444
+#   (0, 3504002)	0.01347842074506345
+#   (0, 3479296)	0.08630114085192526
+#   (0, 3479194)	0.0529980051175931
+#   (0, 3478816)	0.039318922175076494
+#   (0, 3475388)	0.055302811789257285
+#   (0, 3460304)	0.07141726657548661
+#   (0, 3458259)	0.03511088895947588
+#   (0, 3415528)	0.07114366565154993
+#   (0, 3413836)	0.02554800846102287
+#   (0, 3408550)	0.09606926354179977
+#   (0, 3407048)	0.043171730955275496
+#   (0, 3404568)	0.04896018364148461
+#   (0, 3403575)	0.07942645560696833
+#   (0, 3403574)	0.07815409900571342
+#   (0, 3391436)	0.08630114085192526
+#   (0, 3391377)	0.08091178834142444
+#   :	:
+#   (0, 647724)	0.03714893953531246
+#   (0, 579732)	0.09606926354179977
+#   (0, 579730)	0.08792222169558793
+#   (0, 575388)	0.04592099348932002
+#   (0, 573247)	0.04337464546513019
+#   (0, 332224)	0.09606926354179977
+#   (0, 330496)	0.03611085617457935
+#   (0, 314238)	0.1294304678192324
+#   (0, 313687)	0.09524278180433825
+#   (0, 284321)	0.03974221548860016
+#   (0, 204746)	0.09246414009350355
+#   (0, 204736)	0.07114366565154993
+#   (0, 199649)	0.09606926354179977
+#   (0, 188932)	0.034910229595524526
+#   (0, 123773)	0.08175922245400964
+#   (0, 120713)	0.028245933420151005
+#   (0, 119577)	0.09246414009350355
+#   (0, 119574)	0.08630114085192526
+#   (0, 119379)	0.04199025754846673
+#   (0, 64504)	0.08990626430022149
+#   (0, 64356)	0.04233167685130749
+#   (0, 63058)	0.02655482054539092
+#   (0, 57475)	0.08630114085192526
+#   (0, 57008)	0.04856881505621378
+#   (0, 20494)	0.024475066123913945
+
+POST http://localhost:5000/api/classification HTTP/1.1
+content-type: application/json
+
+{
+    "summaries": "Knowledge distillation (KD) is a popular method to train efficient networks (student) with the help of high-capacity networks (teacher). Traditional methods use the teacher's soft logits as extra supervision to train the student network. In this paper, we argue that it is more advantageous to make the student mimic the teacher's features in the penultimate layer. Not only the student can directly learn more effective information from the teacher feature, feature mimicking can also be applied for teachers trained without a softmax layer. Experiments show that it can achieve higher accuracy than traditional KD. To further facilitate feature mimicking, we decompose a feature vector into the magnitude and the direction. We argue that the teacher should give more freedom to the student feature's magnitude, and let the student pay more attention on mimicking the feature direction. To meet this requirement, we propose a loss term based on locality-sensitive hashing (LSH). With the help of this new loss, our method indeed mimics feature directions more accurately, relaxes constraints on feature magnitudes, and achieves state-of-the-art distillation accuracy. We provide theoretical analyses of how LSH facilitates feature direction mimicking, and further extend feature mimicking to multi-label recognition and object detection."
+}
+
+
+# Item loc 1
+# Item index id= 5001
+# titles              Distilling Knowledge by Mimicking Features
+# summaries    Knowledge distillation (KD) is a popular metho...
+# Knowledge distillation (KD) is a popular method to train efficient networks
+# (""student"") with the help of high-capacity networks (""teacher""). Traditional
+# methods use the teacher's soft logits as extra supervision to train the student
+# network. In this paper, we argue that it is more advantageous to make the
+# student mimic the teacher's features in the penultimate layer. Not only the
+# student can directly learn more effective information from the teacher feature,
+# feature mimicking can also be applied for teachers trained without a softmax
+# layer. Experiments show that it can achieve higher accuracy than traditional
+# KD. To further facilitate feature mimicking, we decompose a feature vector into
+# the magnitude and the direction. We argue that the teacher should give more
+# freedom to the student feature's magnitude, and let the student pay more
+# attention on mimicking the feature direction. To meet this requirement, we
+# propose a loss term based on locality-sensitive hashing (LSH). With the help of
+# this new loss, our method indeed mimics feature directions more accurately,
+# relaxes constraints on feature magnitudes, and achieves state-of-the-art
+# distillation accuracy. We provide theoretical analyses of how LSH facilitates
+# feature direction mimicking, and further extend feature mimicking to
+# multi-label recognition and object detection.
+# terms                                       ['cs.CV', 'cs.LG']
+# Name: 5001, dtype: object
+# knowledg distil kd popular method train effici network student help highcapac network teacher tradit method use teacher soft logit extra supervis train student network paper argu advantag make student mimic teacher featur penultim layer not student direct learn effect inform teacher featur featur mimick also appli teacher train without softmax layer experi show achiev higher accuraci tradit kd facilit featur mimick decompos featur vector magnitud direct argu teacher give freedom student featur magnitud let student pay attent mimick featur direct meet requir propos loss term base localitysensit hash lsh help new loss method inde mimic featur direct accur relax constraint featur magnitud achiev stateoftheart distil accuraci provid theoret analys lsh facilit featur direct mimick extend featur mimick multilabel recognit object detect
+#   (0, 3652788)	0.02286638574209817
+#   (0, 3569557)	0.081507226231275
+#   (0, 3568255)	0.030431139839019076
+#   (0, 3528978)	0.06630761591909679
+#   (0, 3504002)	0.011435381602880719
+#   (0, 3405970)	0.052383448793752146
+#   (0, 3403760)	0.07104958442312405
+#   (0, 3403748)	0.05929557404998385
+#   (0, 3393126)	0.081507226231275
+#   (0, 3393086)	0.052148914028047076
+#   (0, 3388529)	0.04424376574799414
+#   (0, 3386247)	0.07321974117532848
+#   (0, 3386161)	0.048593781676243265
+#   (0, 3386019)	0.07627840532719952
+#   (0, 3384893)	0.05809570840632206
+#   (0, 3332386)	0.058908638262816886
+#   (0, 3332343)	0.0286174745476736
+#   (0, 3313689)	0.06799092027125302
+#   (0, 3313290)	0.024824796884297066
+#   (0, 3296814)	0.0720568910337365
+#   (0, 3296741)	0.081507226231275
+#   (0, 3296314)	0.081507226231275
+#   (0, 3296271)	0.15255681065439905
+#   (0, 3296071)	0.25672240650715
+#   (0, 3237191)	0.049621708602168114
+#   :	:
+#   (0, 766491)	0.03966193978621978
+#   (0, 617178)	0.07016107702345745
+#   (0, 616290)	0.030509402611189073
+#   (0, 302322)	0.07627840532719952
+#   (0, 302321)	0.07627840532719952
+#   (0, 295971)	0.01602824914889307
+#   (0, 250823)	0.019685997304599676
+#   (0, 222683)	0.081507226231275
+#   (0, 222666)	0.07641711785311796
+#   (0, 180360)	0.07844856207940396
+#   (0, 174863)	0.021278251824095096
+#   (0, 148562)	0.03915031365622773
+#   (0, 129052)	0.048988307865514336
+#   (0, 128596)	0.01747198911292584
+#   (0, 74960)	0.07627840532719952
+#   (0, 73688)	0.02877209700923047
+#   (0, 33464)	0.030180159799557068
+#   (0, 30707)	0.05584997411094584
+#   (0, 30705)	0.04526764195996981
+#   (0, 28135)	0.03352423132830193
+#   (0, 27185)	0.06276209936717754
+#   (0, 25635)	0.07844856207940396
+#   (0, 25619)	0.06308315181863905
+#   (0, 20494)	0.041530343380206905
+#   (0, 16752)	0.025154888350641003
