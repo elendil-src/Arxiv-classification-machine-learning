@@ -3,7 +3,7 @@
 ## Overview
 Notebook to generate model for classifying set of Arxiv Computer Science artices, and Flask-based REST API to serve predictions.
 
-## Instructions
+## Setup Instructions etc
 - Python 3.8 at a minimum is required.
 
 - Unzip ```arxiv-dataset/arxiv_data.csv.7z```
